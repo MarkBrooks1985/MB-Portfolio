@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
 
+/* Below is the coded route to host varibles for easy reference and setting of color etc */
+
 :root {
     --background-color: blue;
     --text-color: #fff;
     --border-color: #6699CC;
 }
+
+/* styling of a href links */
 
 a {
     color: var(--text-color);
@@ -13,12 +17,16 @@ a {
     font-weight: bold;
 }
 
+/* header styling */
+
 header  {
     background-color:  var(--background-color);
     border: var(--border-color) solid 7px;
     color: var(--text-color);
     padding: 5px;
 }
+
+/* Various css styling */
 
 .me {
     color: var(--text-color);
@@ -44,14 +52,64 @@ p {
     color: var(--text-color);
 }
 
+img {
+    border: var(--border-color) solid 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img:hover {
+    border-color: silver;
+    box-shadow: 0 0 5px 10px silver;
+}
+
 .about-title {
     color: var(--text-color);
 }
 
 .about-me {
     color: var(--text-color);
+    height: 270px;
 }
 
-@media screen {
-    
+footer {
+    color: var(--text-color);
+    text-align: center;
 }
+
+/* responsive css below to make the site adjust and look right on different screens and devices */
+
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+    /* Change the header color */
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    /* Change the header color */
+    header {
+      background: #8ac4ff;
+    }
+  }
+  
