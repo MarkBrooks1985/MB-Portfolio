@@ -67,11 +67,17 @@ p {
     margin: 5px;
 }
 
-.img-text {
+figure img {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+figcaption {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: inline-block;
+    z-index: 2;
+    bottom: 25%;
 }
 
 img:hover {
@@ -109,13 +115,6 @@ footer {
     .img-container {
         width: 50%;
     }
-    .img-text {
-        width: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);    
-    }
     .avatar {
         width: 50%;
     }
@@ -123,6 +122,12 @@ footer {
         width: 50%;
     }
     header {
+        width: 50%;
+    }
+    figure {
+        width: 50%;
+    }
+    figcaption {
         width: 50%;
     }
   }
@@ -137,10 +142,13 @@ footer {
     .img-container {
         width: 100%;
     }
-    .img-text {
+    header {
         width: 100%;
     }
-    header {
+    figure {
+        width: 100%;
+    }
+    figcaption {
         width: 100%;
     }
   }
