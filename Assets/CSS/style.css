@@ -65,6 +65,12 @@ p {
     border: var(--border-color) solid 10px;
     border-radius: 5px;
     margin: 5px;
+    left: 25%;
+}
+
+figure {
+    display: inline-block;
+    position: relative;
 }
 
 figure img {
@@ -78,6 +84,7 @@ figcaption {
     display: inline-block;
     z-index: 2;
     bottom: 25%;
+    left: 75%;
 }
 
 img:hover {
