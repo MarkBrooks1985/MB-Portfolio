@@ -52,16 +52,18 @@ p {
     color: var(--text-color);
 }
 
-img {
+.avatar {
     border: var(--border-color) solid 10px;
-    border-radius: 5px;
-    margin: 5px;
+    border-radius: 50%;    
 }
 
 .img-container {
     position: relative;
     text-align: center;
     color: var(--text-color);
+    border: var(--border-color) solid 10px;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .img-text {
@@ -93,23 +95,27 @@ footer {
 /* responsive css below to make the site adjust and look right on different screens and devices */
 
 @media screen and (max-width: 992px) {
-    .card {
+    .about-me {
       width: 50%;
     }
-    /* Change the header color */
+    img {
+        width: 50%;
+    }
     header {
-      background: #772014;
+        width: 50%;
     }
   }
   
   /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
-    .card {
+    .about-me {
       width: 100%;
     }
-    /* Change the header color */
+    img {
+        width: 50%;
+    }
     header {
-      background: #8ac4ff;
+        width: 100%;
     }
   }
   
