@@ -111,6 +111,36 @@ footer {
     text-align: center;
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+input[type=submit]:hover {
+    background-color: var(--border-shadow);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
 /* responsive css below to make the site adjust and look right on different screens and devices */
 
 @media screen and (max-width: 992px) {
