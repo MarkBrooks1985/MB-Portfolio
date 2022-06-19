@@ -3,10 +3,11 @@
 /* Below is the coded route to host varibles for easy reference and setting of color etc */
 
 :root {
-    --background-color: blue;
-    --text-color: #fff;
-    --border-color: #6699CC;
-    --font: "Voltaire"
+    --background-color: #3e6e7a;
+    --text-color: #c9c9ce;
+    --border-color: #879ca3;
+    --border-shadow: #b3a8a0;
+    --font: "Voltaire";
 }
 
 /* styling of a href links */
@@ -88,8 +89,8 @@ figcaption {
 }
 
 img:hover {
-    border-color: silver;
-    box-shadow: 0 0 5px 10px silver;
+    border-color: var(--border-shadow);
+    box-shadow: 0 0 5px 10px var(--border-shadow);
 }
 
 .about-title {
