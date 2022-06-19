@@ -106,13 +106,12 @@ footer {
     }
   }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
     .about-me {
       width: 100%;
     }
     img {
-        width: 50%;
+        width: 100%;
     }
     header {
         width: 100%;
